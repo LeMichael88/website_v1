@@ -1,5 +1,5 @@
 body{
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   line-height: 1.5;
   padding: 0;
@@ -23,12 +23,10 @@ html {
   margin:auto;
   padding: 20px;
   overflow: hidden;
-  display:flex;
-  justify-content:space-between;
 }
 
 .responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -134,7 +132,7 @@ header a:hover{
 #about{
   padding: 15px;
   border-top: #000000 3px solid;
-  background: url('../img/nature.jpg') no-repeat 0 -175px;
+  background: url('../img/nature.jpg') no-repeat 0 -150px;
   background-size: 150%;
   position: relative;
 }
@@ -173,7 +171,8 @@ header a:hover{
 
 #projects .project{
   position: relative;
-  flex-basis: 30%;
+  display:inline-block;
+  width: 30%;
   padding: 10px;
   text-align: center;
   margin-bottom: 10px;
@@ -183,7 +182,6 @@ header a:hover{
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-
 }
 
 #projects .project::after {
@@ -211,29 +209,12 @@ header a:hover{
 }
 
 #projects .project img {
-  min-height: 300px;
-  min-width: 300px;
-  overflow: hidden;
-  object-fit: cover;
+  width: 200px;
 }
 
 #projects .project button{
   margin: auto;
   display: block;
-  padding: 10px;
-  background-color: #ffc0cb;
-  border: #000000 2px solid;
-  color: #000000;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-#projects .project button:hover span{
-  display: none;
-}
-
-#projects .project button:hover:before {
-  content:"View Repository";
 }
 
 /* Contact */
@@ -272,19 +253,14 @@ footer{
   color: #000000;
   background-color: #fc2a2a;
   text-align: center;
-  border-top: #000000 3px solid;
 }
 
 /* Media Queries */
 @media(max-width:768px){
-  header nav, header nav li, #contact{
+  header nav, header nav li, #projects .project, #contact{
     float: none;
     text-align: center;
     width: 100%;
-  }
-
-  .container1{
-    display:block;
   }
 
   header {

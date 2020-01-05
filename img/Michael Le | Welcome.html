@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Personal website showcasing Michael's projects">
+    <meta name="keywords" content="michael le, projects, about, web design, professional">
+    <meta name="author" content="Michael Le">
+    <title>Michael Le | Welcome</title>
+    <link rel="stylesheet" href="Michael%20Le%20|%20Welcome_files/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Hi! I'm Michael</h1>
+        <p>Welcome to my website.</p>
+      </div>
+      <a href="#about">
+      <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div></a>
+    </section>
+
+    <section id="about" style="background-position-x: 0px;">
+      <div class="container" style="background-color:rgba(255, 255, 255, 0.7);">
+        <h1>About</h1>
+        <p>Hi! My name is Michael Le. I'm currently in my 1B term 
+studying computer science at the University of Waterloo. I have a 
+passion for programming and I am enthusiastic about learning new things.
+ I have experience in Java programming, android development, web 
+development, and UI design. I am interested in learning and working with
+ AI and I hope to do more back-end projects in the future!
+        Feel free to check out some of my <a href="#projects">projects</a> and contact me <a href="#contact">here</a>!</p>
+      </div>
+    </section>
+
+    <script src="Michael%20Le%20|%20Welcome_files/jquery-3.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        var scroll_position = $(window).scrollTop()/2;
+        $('#about').css({
+          'background-position-x' : - scroll_position + 'px',
+        })
+      })
+    </script>
+
+    <section id="projects">
+      <div class="container">
+        <h1>Projects</h1>
+      </div>
+      <div class="container1">
+        <div class="project">
+          <img src="Michael%20Le%20|%20Welcome_files/test.png" class="responsive">
+          <h3>This Website!</h3>
+          <p>This website was done as a quick project to learn and 
+practice using HTML5 and CSS3. It showcases my projects and how one can 
+contact me!</p>
+          <button type="button" onclick="location.href='https://github.com/LeMichael88/lemichael88.github.io'">Github</button><button>
+        </button></div>
+        <div class="project">
+          <img src="Michael%20Le%20|%20Welcome_files/hootguardlogo.png" class="responsive">
+          <h3>Project</h3>
+          <p>An android app that uses the ML kit in Google's Firebase 
+API to detect if a person is drowsy or falling asleep while driving. 
+Made during Hack the North 2019.</p>
+          <button type="button" onclick="location.href='https://github.com/LeMichael88/HootGuard'">Github</button><button>
+        </button></div>
+        <div class="project">
+          <img src="Michael%20Le%20|%20Welcome_files/test.png" class="responsive">
+          <h3>Coming Soon!</h3>
+          <p>I'm currently working on some more cool projects! Take a look at what i'm working on on my Github.</p>
+          <button type="button" onclick="location.href='https://github.com/LeMichael88/'">Github</button><button>
+        </button></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+      </div>
+      <div class="container">
+        <a href="https://github.com/LeMichael88"><img src="Michael%20Le%20|%20Welcome_files/githublogo.png"></a>
+        <a href="https://www.linkedin.com/in/lemichael88"><img src="Michael%20Le%20|%20Welcome_files/linkedinlogo.png"></a>
+        <a href="https://devpost.com/LeMichael88"><img src="Michael%20Le%20|%20Welcome_files/devposticon.png"></a>
+        <a href="file:///Users/lemichael/Documents/website/img/Resume.pdf"><img src="Michael%20Le%20|%20Welcome_files/resumelogo.png"></a>
+        <a href="mailto:m42le@uwaterloo.ca"><img src="Michael%20Le%20|%20Welcome_files/mail.png"></a>
+      </div>
+      <div class="container">
+        <p>Email me at m42le@uwaterloo.ca</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Michael Le, Updated January 4, 2020</p>
+    </footer>
+  
+
+</body></html>
