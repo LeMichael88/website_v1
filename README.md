@@ -2,7 +2,7 @@
 
 This is a personal website to display my projects, made as a small side project to learn and practice using HTML and CSS
 
-<b>Updates</b>
+<h2>Updates</h2>
 
 Next Steps:
 * Add responsiveness for mobile
