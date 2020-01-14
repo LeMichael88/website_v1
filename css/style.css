@@ -133,8 +133,8 @@ header a:hover{
 /* About */
 #about{
   padding: 15px;
-  border-top: #000000 3px solid;
-  background: url('../img/nature.jpg') no-repeat 0 -175px;
+  border-top: #888888 3px solid;
+  background: url('../img/newbackground.svg') no-repeat 0 -175px;
   background-size: 150%;
   position: relative;
 }
